@@ -1,0 +1,273 @@
+/* styling the body to fit the required constraints of user viewport */
+body {
+  align-items: center;
+  margin: 0px;
+  font-size: 16px;
+  font-family: 'EB Garamond', serif;
+}
+
+/* Max width for the footer image and text */
+main,
+.navibar,
+footer div {
+  max-width: 640px;
+}
+
+/* Using CSS Media queries to make the navigation bar responsive */
+@media screen and (max-width: 720px) {
+  main,
+  .navibar,
+  footer div {
+    padding: 0px 1em;
+  }
+}
+
+/* styling for all the headings */
+h1 {
+  display: flex;
+  justify-content: center;
+  padding: 1.5em 1em;
+  font-size: 64px;
+  color: white;
+  font-family: 'Darker Grotesque', sans-serif;
+  text-shadow: 2px 3px 5px #000;
+  line-height: 0.2;
+  margin-bottom: 0px;
+}
+
+/* styling the navigation elements to fit the bar */
+.navibar div {
+  padding: 0.5em;
+  flex-grow: 1;
+  text-align: center;
+}
+ /* Applying media queries for the navigation bar for appropriate screen fit*/
+@media screen and (max-width: 540px) {
+  .navibar {
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  /* Applying internal (padding) space to the navigation elements  */
+  .navibar div {
+    width: 100%;
+    padding: 0.5em 0px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+}
+
+main {
+  margin: 1.5em auto;
+  position: relative;
+}
+
+aside {
+  position: absolute;
+  bottom: 0;
+  right: -55%;
+  max-width: 300px;
+}
+
+@media screen and (max-width: 1400px) {
+  aside {
+    position: initial;
+    max-width: 100%;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Applying styles to the text in the image */
+#the {
+  font-size: 32px;
+  font-weight: 200;
+}
+
+#ocean {
+  font-weight: 300;
+}
+
+/* Positioning the image used at the header */
+.photo {
+  background-image: url("http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/ocean_cleanup/resources/ocean.jpg");
+  background-position: center;
+}
+
+/* Applying different styles to the navigation bar elements when hovered over  */
+nav {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: 'Darker Grotesque', sans-serif;
+}
+
+.navibar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.navibar div:hover {
+  background-color: #FFF;
+  color: #009eb8;
+  cursor: pointer;
+}
+
+.techstyle {
+  position: relative;
+}
+
+.techstyle div {
+  display: none;
+}
+
+.techstyle div:hover {
+  background-color: #808080;
+}
+
+/* Applying  given font styles to the headings */
+h2,
+h3 {
+  font-family: 'Special Elite', cursive;
+}
+
+Styling the card to 
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  display: inline-flex;
+  border: 1px solid #cecece;
+  flex-direction: column;
+}
+
+/* Rotation of the cards with a tilt to the left hand side */
+.tilt-left {
+  float: left;
+  margin: 1em;
+  transform: rotate(-2deg);
+}
+
+/* Rotation of cards with a tilt to the right hand side */
+.tilt-right {
+  float: right;
+  margin: 1em;
+  transform: rotate(2deg);
+}
+
+/* Styling of the Caption with images */
+.card .caption {
+  text-align: right;
+  font-family: 'Special Elite', cursive;
+  color: #707070;
+}
+
+.box {
+  margin: 0.7em;
+}
+
+.caption {
+  padding: 0.1px 10px;
+  font-size: 14px;
+  margin-top: 0px;
+}
+
+.caption p {
+  margin: 0.5em 0px;
+  margin-top: 0px;
+}
+ /* Applying styling to the footer along with  adjusting user viewport */
+footer {
+  font-family: 'Darker Grotesque', sans-serif;
+}
+
+footer div {
+  margin: 0 auto;
+  text-align: center;
+  padding: 1em;
+}
+ /* Styling the table, its each cell and the text within */
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+td {
+  border-bottom: 1px solid black;
+  padding: 0.1em 0.5em;
+}
+
+th {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+tbody {
+  border-bottom: 2px solid black;
+}
+
+/* Styling the quoatation with appropriate CSS */
+blockquote {
+  font-style: italic;
+  margin-bottom: 0.25em;
+}
+
+.boyan-quote {
+  color: #009eb8;
+  font-size: 32px;
+  text-align: center;
+}
+
+/* Applying different stylings to the form and its textual and input components */
+form {
+  border: 1px solid #d9ce92;
+  background-color: #fff6c6;
+  padding: 1em 1.5em;
+  border-radius: 10px;
+}
+
+.input-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 0.5em;
+  align-items: center;
+}
+
+.input-grid div:nth-child(2) {
+  text-align: right;
+}
+
+.select-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.select-grid select {
+  height: 100%;
+  background-color: #efefef;
+  border-radius: 2.5px;
+}
+
+input[type="number"] {
+  width: 50px;
+  margin-left: 0.5em;
+}
+
+form button {
+  border: 1px solid #d9ce92;
+  background-color: #fff6c6;
+  border-radius: 5px;
+  padding: 0.5em;
+}
+
+/* Applying styling the the Reset button of the calculator */
+.reset-wrapper {
+  display: flex;
+  justify-content: end;
+  margin-top: 0.5em;
+}
